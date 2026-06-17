@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Choix Caisse</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f4f6f9;color:#333}
+.navbar{background:#1e3a8a;color:white;padding:20px 50px;display:flex;justify-content:space-between;align-items:center}
+.navbar h2{font-size:24px}
+.container{max-width:600px;margin:90px auto}
+.card{background:white;padding:35px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+h1{text-align:center;color:#1e3a8a;margin-bottom:25px}
+label{font-weight:bold;display:block;margin-bottom:8px}
+select{width:100%;padding:14px;border:1px solid #d1d5db;border-radius:10px;margin-bottom:22px}
+button{width:100%;padding:14px;border:none;border-radius:10px;background:#16a34a;color:white;font-weight:bold;cursor:pointer}
+button:hover{background:#15803d}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <h2>🛒 Caisse Supermarché</h2>
+    <span>Bienvenue</span>
+</div>
+
+<div class="container">
+    <div class="card">
+        <h1>Choisir une caisse</h1>
+
+        <form action="achat.html">
+            <label>Caisse disponible</label>
+            <select>
+                <option>Caisse 1</option>
+                <option>Caisse 2</option>
+            </select>
+
+            <button>Valider la caisse</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

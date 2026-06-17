@@ -18,3 +18,16 @@ CREATE TABLE achat(
     quantite int,
     date_achat datetime default current_timestamp
 )
+CREATE TABLE users(
+    id int auto_increment primary key,
+    nom varchar(50),
+    prenom varchar(50),
+    email varchar(100) unique,
+    mot_de_passe varchar(255),
+    id_role int,
+    foreign key (id_role) references role(id)
+)
+CREATE TABLE role(
+    id int auto_increment primary key,
+    nom_role varchar(50) unique
+)

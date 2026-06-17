@@ -6,3 +6,5 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
+$routes->get('/produits', 'ProduitsController::index');
+$routes->post('/produits/insert', 'ProduitsController::insert');
